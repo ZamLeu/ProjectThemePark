@@ -1,0 +1,27 @@
+#lower{
+  width: 900px;
+  height: 500px;
+  background-color: rgba(235, 235, 235, 0.75);
+  font-size: 20px;
+  margin-top: 50px;
+ }
+ #huhu{
+ 	position: relative;
+ 	left: -35px;
+ 	top: 50px;
+ }
+ #haha{
+ 	position: relative;
+ 	left: -100px;
+ 	top: 300px;
+ }
+#hihi{
+	position: relative;
+	left: -100px;
+	top: 300px;
+}
+ form {
+ 	margin-left: 200px;
+ 	margin-top: -100px;
+
+ }

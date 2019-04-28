@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">															
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/popular.css">
+  <style type="text/css">
+    body{
+   background-image: url(img/ferris.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  </style>
+   <script type="text/javascript">
+      function intplace(evt, intplace) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(intplace).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+    </script>
+</head>
+<body background="img/ferris.png">
+<center>
+<h2>WELCOME TO THEME PARK IS LOVE</h2>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="popular.html">POPULAR PLACES</a></li>
+				<li><a href="rate.html">TOP RATE</a></li>
+				<li><a href="share.html">SHARE YOURS</a></li>
+			</ul>
+		</nav>
+	</div>
+  <section id="lower">
+        <h2>INTERESTING THEMEPARK IN MALAYSIA</h2>
+        <div id="info">
+          <div class="tab"><ol>
+            <button class="tablinks" onmouseover="intplace(event, 'Legoland')"><li>Legoland Malaysia</li></button>
+            <button class="tablinks" onmouseover="intplace(event, 'Sunway')"><li>Sunway Lagoon</li></button>
+            <button class="tablinks" onmouseover="intplace(event, 'Genting')"><li>Genting Highland Themepark</li></button>
+            <button class="tablinks" onmouseover="intplace(event, 'Lost')"><li>Lost World Of Tambun</li></button>
+            <button class="tablinks" onmouseover="intplace(event, 'Wet')"><li>Wet World Shah Alam Waterpark</li></button>
+          </ol></div>
+          <div id="Legoland" class="tabcontent">
+            <h1>Legoland Malaysia</h1><br>
+            <img src="img/legoland.jpg" width="30%" onmouseover="this.style.width='400px'" onmouseout= "this.style.width='250px'">><br><br>
+            <p><b>Highlights</b> – Everything that you touch here, gives you a hands-on experience. You will be able to push, create, dismantle or assemble just anything that you see. There is a Water Park, Wave Pool, Joker Soaker and Build-A-Raft here. <br>
+            <b>Location</b> – Johor Bahru. Activities – Miniland (Landmarks of Asia created out of Lego bricks), Beginning (huge selection of Lego Toys), Ride through Lego Kingdoms with an interesting roller coaster and a host of indoor activities. 
+            </p></div>
+          <div id="Sunway" class="tabcontent">
+            <h1>Sunway Lagoon</h1><br>
+            <img src="img/sunwaylagoon.jpg" width="30%" onmouseover="this.style.width='400px'" onmouseout= "this.style.width='250px'">><br><br>
+            <p><b>Highlights</b> – There are over 80 attractions in this theme park, which is set up at a sprawling area of 88 acres. Park is divided into five areas based on adventure experience – Water Park, Amusement Park, Wildlife Park, Extreme Park and Scream Park. <br><br>
+            <b>Location</b> Petaling Jaya, about 15km southwest of the capital city of Kuala Lumpur. 
+            </p></div></div>
+          <div id="Genting" class="tabcontent">
+            <h1>Genting highland Themepark</h1><br>
+            <img src="img/genting.jpg" width="30%" onmouseover="this.style.width='400px'" onmouseout= "this.style.width='250px'">><br><br>
+            <p><b>Highlights</b> – This is the world’s first indoor theme park and houses the Ripley’s Believe it or not Museum and Haunted Adventure parks inside, sending shrills across the spines of tourists coming here. Rides are clearly classified as family and kids’ rides, thereby ensuring the safety of kids. <br><br>
+            <b>Location</b>– Pahang, Malaysia. 
+            </p></div>
+          <div id="Lost" class="tabcontent">
+            <h1>Lost World Of Tambun</h1><br>
+            <img src="img/lostworld.jpg" width="30%" onmouseover="this.style.width='400px'" onmouseout= "this.style.width='250px'">><br><br>
+            <p><b>Highlights</b> – The resort cum theme park has six distinct areas of unlimited fun and adventure namely Water Park, Amusement Park, Petting Zoo, Tiger Valley, Tin Valley, Adventure Park.<br><br>
+            <b>Location</b>– Sunway City Ipoh, Perak Darul Ridzuan, Malaysia. 
+            </p></div>
+          <div id="Wet" class="tabcontent">
+          <h1>Wet World Shah Alam Waterpark</h1><br>
+           <img src="img/wetworld.jpg" width="30%" onmouseover="this.style.width='400px'" onmouseout= "this.style.width='250px'">><br><br>
+            <p><b>Highlights</b>– During 2011, this park was bestowed with awards like “Best Small Water Park” and “First Green Water Park”. Apart from providing various exciting rides to tourists, this park also arranges for hosting private and corporate functions as the hospitality and food at this place is excellent. <br><br>
+            <b>Location</b>–Shah Alam, Selangor. </p>
+          <div class="clearfix"></div>
+        </div>
+      </section>
+</center>
+</body>
+</html>

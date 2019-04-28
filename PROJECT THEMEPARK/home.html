@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">															
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <style type="text/css">
+    body{
+   background-image: url(img/ferris.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  </style>
+</head>
+<body>
+<center>
+<h2>WELCOME TO THEME PARK IS LOVE</h2>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="popular.html">POPULAR PLACES</a></li>
+				<li><a href="rate.html">TOP RATE</a></li>
+				<li><a href="share.html">SHARE YOURS</a></li>
+			</ul>
+		</nav>
+	</div>
+<br><br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/legoland.jpg" style="width:65%">
+  <div class="text">LEGOLAND</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/bearthemepark.jpg" style="width:65%">
+  <div class="text">BEAR THEMEPARK</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/sunwaylagoon.jpg" style="width:65%">
+  <div class="text">SUNWAY LAGOON</div>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="music">
+<p>Music:</p>
+<br>
+<audio onplay="myFunctionD()" id="audio" width="350" height="250" controls autoplay>
+  <source src="music/Urban.m4a" type="audio/mp3">
+  <br>
+</audio>
+</div>
+<script>
+function myFunctionD() {
+  var x = document.getElementById("audio").autoplay;
+  document.getElementById("demo").innerHTML = x;
+}
+var vid = document.getElementById("audio");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
+function disableAutoplay() { 
+  vid.autoplay = false;
+  vid.load();
+} 
+</script>
+<img id="s1" src="img\sponsored.png" width="200px" height="400px" onmouseover="this.style.width='250px'" onmouseout= "this.style.width='200px'">
+</center>
+</body>
+</html>

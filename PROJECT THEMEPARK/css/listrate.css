@@ -1,0 +1,23 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th {
+  border: 1px lightgrey;
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+#lower{
+	width: 900px;
+  height: 500px;
+  background-color: rgba(235, 235, 235, 0.75);
+  font-size: 20px;
+  margin-top: 50px;
+   margin-left: 50px; 
+}

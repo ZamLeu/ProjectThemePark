@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">															
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/share.css">
+	  <style type="text/css">
+    body{
+   background-image: url(img/ferris.png);
+   background-repeat: no-repeat;
+   background-size: cover;}
+  </style>
+    <script type="text/javascript">
+      function alert1(){
+        alert("GREAT! Thanks for the new inform!.");
+        window.location.reload();}
+       function display(){
+  DispWin = window.open('','NewWin',
+    'toolbar=no,status=no,width=500,height=300');
+    message = "<br> Your information : <br/>";
+    message += "<ul><li><b>Name of the place: </b>" + document.form1.placename.value;
+    message += "<li><b>Description: </b>" + document.form1.description.value;
+    message += "<li><b>Address: </b>" + document.form1.address.value + "</u>";
+    message += "<br><HR><br>" + '<br> <input type="button" value="Print" onclick="window.print()" />' + "<br/>";
+  DispWin.document.write(message);}
+    </script>
+</head>
+<body background="img/ferris.png">
+<center>
+<h2>WELCOME TO THEME PARK IS LOVE</h2>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="popular.html">POPULAR PLACES</a></li>
+				<li><a href="rate.html">TOP RATE</a></li>
+				<li><a href="share.html">SHARE YOURS</a></li>
+			</ul>
+		</nav>
+	</div>
+<section id="lower">
+        <div id="info">
+        <img id="huhu" src="img\icity.jpg" width="200px" height="180px" onmouseover="this.style.width='290px'" onmouseout= "this.style.width='200px'">
+        <img id="haha" src="img\wetworld.jpg" width="200px" height="180px" onmouseover="this.style.width='290px'" onmouseout= "this.style.width='200px'">
+        <img id="hihi" src="img\escapethemepark.jpg" width="200px" height="180px" onmouseover="this.style.width='290px'" onmouseout= "this.style.width='200px'">
+<form name="form1">
+  <p><b>Place Name:</b> &nbsp; <input type="text" size="25" name="placename"></p><br>
+  <p><b>Description:</b> &nbsp; <textarea size="25" name="description" style="vertical-align:middle"/></textarea></p><br>
+  <p><b>Address:</b> &nbsp; <textarea size="25" name="address"></textarea></p><br>
+  <p><input type="button" value="Submit" onclick="display();"></p>
+</form>
+  </section>
+</center>
+</body>
+</html>

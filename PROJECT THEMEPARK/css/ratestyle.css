@@ -1,0 +1,147 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+td, th {
+  border: 1px lightgrey;
+  text-align: left;
+  padding: 15px;
+}
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+.rating{
+	position: relative;
+	top: 193px;
+	left: 253px;
+	transform: translate(-50%, -50%) rotateY(180deg);
+	display: flex;
+}
+.rating input{
+	display:none;
+}
+.rating label
+{
+	display: block;
+	cursor: pointer;
+	width: 30px;
+}
+.rating label:before{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	color: #101010;
+}
+.rating label:after{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 30px;
+	color: #1f9cff;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating label:hover:after,
+.rating input:checked ~ label:after{
+	opacity: 1;
+}
+.rating1{
+	position: relative;
+	top: 218px;
+	left: 253px;
+	transform: translate(-50%, -50%) rotateY(180deg);
+	display: flex;
+}
+.rating1 input{
+	display:none;
+}
+.rating1 label
+{
+	display: block;
+	cursor: pointer;
+	width: 30px;
+}
+.rating1 label:before{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	color: #101010;
+}
+.rating1 label:after{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 30px;
+	color: #1f9cff;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating1 label:hover:after,
+.rating1 input:checked ~ label:after{
+	opacity: 1;
+}
+.rating2{
+	position: relative;
+	top: 240px;
+	left: 253px;
+	transform: translate(-50%, -50%) rotateY(180deg);
+	display: flex;
+}
+.rating2 input{
+	display:none;
+}
+.rating2 label
+{
+	display: block;
+	cursor: pointer;
+	width: 30px;
+}
+.rating2 label:before{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	color: #101010;
+}
+.rating2 label:after{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 30px;
+	color: #1f9cff;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating2 label:hover:after,
+.rating2 input:checked ~ label:after{
+	opacity: 1;
+}
+#button{
+	position: relative;
+	top: -80px;
+	left: -5px;
+}
+#lower{
+	width: 900px;
+  height: 500px;
+  background-color: rgba(235, 235, 235, 0.75);
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 50px; 
+}
+
